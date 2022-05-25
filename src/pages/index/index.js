@@ -9,7 +9,7 @@ function Index() {
           <css-icon class="icon-location"></css-icon>长沙市
         </div>
         <div className="tips">
-          <css-icon class="icon-mail"></css-icon>
+          <css-icon class="icon-message"></css-icon>
         </div>
       </div>
       <div className="content">
@@ -38,42 +38,61 @@ function Index() {
           </div>
         </div>
         <div className="scene-container">
-          {["烈士公园", "岳麓山", "橘子洲", "湖南大学", "第一师范", "马王堆"].map(
-            (item, index) => (
-              <div className="scene-div">
-                <div
-                  className={`scene-image color${
-                    index >= 4 ? index % 4 : index
-                  }`}
-                ></div>
-                <div className="scene-text">
-                  <div className="title">
-                      <div className="title-goup">
-
+          {[
+            "烈士公园",
+            "岳麓山",
+            "橘子洲",
+            "湖南大学",
+            "第一师范",
+            "马王堆",
+          ].map((item, index) => (
+            <div className="scene-div">
+              <div
+                className={`scene-image color${index >= 4 ? index % 4 : index}`}
+              ></div>
+              <div className="scene-text">
+                <div className="title">
+                  <div className="title-goup">
                     <div className="title-item bold">{item}</div>
                     <div className="title-item orange">
                       {4 + 0.1 * (index % 4)}分
                     </div>
-                      </div>
-                    <div className="title-item grey">
-                      距离{100 + 100 * (index % 2) + (index % 4) * 10}m
-                    </div>
                   </div>
-                  <div className="label">
-                    <div className="label-item">剧本数量{2+(index % 2)}</div>
-                    <div className="label-group">
+                  <div className="title-item grey">
+                    距离{100 + 100 * (index % 2) + (index % 4) * 10}m
+                  </div>
+                </div>
+                <div className="label">
+                  <div className="label-item">剧本数量{2 + (index % 2)}</div>
+                  <div className="label-group">
                     <div className="label-item span">悬疑</div>
                     <div className="label-item span">推理</div>
-                    </div>
                   </div>
-                  <div className="label">
-                    <div className="label-item red bold">门票¥{10+(index % 2)*10}起</div>
+                </div>
+                <div className="label">
+                  <div className="label-item red bold">
+                    门票¥{10 + (index % 2) * 10}起
                   </div>
                 </div>
               </div>
-            )
-          )}
+            </div>
+          ))}
         </div>
+      </div>
+      <div className="footer">
+        <div className={`footer-logo`}></div>
+        {[
+          { key: "eye", value: "社交圈" },
+          { key: "share", value: "成就积分" },
+          { key: "person", value: "我的" },
+        ].map((item, index) => (
+          <div className="footer-item">
+            <div className={`footer-${item.key}`}>
+              <css-icon class={`icon-${item.key}`}></css-icon>
+            </div>
+            <div>{item.value}</div>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -13,9 +13,25 @@
   background-color: #7163c8;
 }
 .content {
+  padding-bottom: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.footer {
+  position: fixed;
+  height: 16vw;
+  width: 100vw;
+  padding-left: 3vw;
+  padding-right: 5vw;
+  font-size: 6vw;
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  background-color: #7163c8;
 }
 .search-container {
   width: 100vw;
@@ -156,6 +172,21 @@
   justify-content: center;
   align-items: center;
 }
+.footer-item{
+  height: 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1vw;
+}
+.footer-logo{
+  height: 20vw;
+  width: 20vw;
+  background-image: url('../../static/images/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 .color0 {
   background-color: #2d6da8;
@@ -175,8 +206,8 @@
 .grey {
   color: #999;
 }
-.red{
-    color: rgb(231, 73, 73);
+.red {
+  color: rgb(231, 73, 73);
 }
 .bold {
   font-weight: 900;
@@ -218,19 +249,26 @@ css-icon::after {
   -ms-transform: translate(-50%, -0.25em);
   transform: translate(-50%, -0.25em);
 }
-.icon-mail::before {
-  width: 1.35em;
-  height: 1.1em;
-  border: 2px solid;
-  border-radius: 2px;
+.icon-message {
+  border: solid transparent;
+  border-width: .05em .05em .3em;
+  border-radius: 3px;
+  box-shadow: inset 0 2px, inset -2px 0, inset 2px 0;
 }
-.icon-mail::after {
-  width: 0.6em;
-  height: 0.6em;
+.icon-message::before {
+  width: .85em; height: 2px;
+  border-left: calc(2px + .1em) solid;
+  border-right: calc(.5em - 2px) solid;
+  top: 100%;
+}
+.icon-message::after {
+  width: .3em; height: .3em;
   border-style: solid;
   border-width: 0 0 2px 2px;
-  -ms-transform: translate(-50%, -0.35em) rotate(-45deg) skew(10deg, 10deg);
-  transform: translate(-50%, -0.35em) rotate(-45deg) skew(10deg, 10deg);
+  left: calc(2px + .1em); 
+  top: calc(100% - 0.1242em);
+  -ms-transform: skewY(-45deg);
+  transform: skewY(-45deg);
 }
 .icon-search::before {
   width: 0.75em;
@@ -249,4 +287,48 @@ css-icon::after {
   top: 80%;
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
+}
+.icon-share {
+  border: solid transparent;
+  border-width: 2px 2px 0 0;
+  box-shadow: inset 0 -2px, inset 2px 0;
+}
+.icon-share::before {
+  width: .4em; height: .4em;
+  border-style:  solid;
+  border-width: 0 2px 2px 0;
+  left: 100%; top: .2em;
+  -ms-transform: translate(-125%, -50%) rotate(-45deg);
+  transform: translate(-125%, -50%) rotate(-45deg);
+}
+.icon-share::after {
+  width: .6em; height: .6em;
+  border-style:  solid;
+  border-width: 2px 0 0 2px;
+  border-radius: 75% 15%;
+}
+
+.icon-eye::before {
+  width: .9em; height: .9em;
+  border: 2px solid;
+  border-radius: 70% 15%;
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.icon-eye::after {
+  width: .5em; height: .5em;
+  border: 2px solid;
+  border-radius: 50%;
+}
+.icon-person::before {
+  width: .45em; height: .45em;
+  border: 2px solid;
+  border-radius: 50%;
+  top: 25%;  
+}
+.icon-person::after {
+  width: .9em; height: .4em;
+  border: 2px solid;
+  border-radius: 50% 50% 0 0;
+  top: 75%;
 }
