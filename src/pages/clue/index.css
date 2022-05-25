@@ -1,0 +1,45 @@
+.clue-header {
+  height: 16vw;
+  width: 100vw;
+  font-size: 6vw;
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #7163c8;
+}
+.clue-header-bg {
+  height: 16vw;
+}
+.clue-img {
+  height: 70vw;
+  width: 100vw;
+  background-image: url("../../static/images/bg_3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.clue-content {
+  width: 100vw;
+  padding: 10vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.clue-title {
+  margin-bottom: 2vw;
+  font-size: 8vw;
+  color: orange;
+}
+.clue-text {
+  padding: 2vw;
+  border: solid #7163c8 0.1vw;
+  border-radius: 1vw;
+  font-size: 5.4vw;
+}
+.clue-tip {
+  margin-top: 4vw;
+  color: #999;
+  font-size: 4vw;
+}

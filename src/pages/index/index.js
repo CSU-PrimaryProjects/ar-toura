@@ -46,36 +46,40 @@ function Index() {
             "第一师范",
             "马王堆",
           ].map((item, index) => (
-            <div className="scene-div">
-              <div
-                className={`scene-image color${index >= 4 ? index % 4 : index}`}
-              ></div>
-              <div className="scene-text">
-                <div className="title">
-                  <div className="title-goup">
-                    <div className="title-item bold">{item}</div>
-                    <div className="title-item orange">
-                      {4 + 0.1 * (index % 4)}分
+            <Link className="link" to="/map">
+              <div className="scene-div">
+                <div
+                  className={`scene-image color${
+                    index >= 4 ? index % 4 : index
+                  }`}
+                ></div>
+                <div className="scene-text">
+                  <div className="title">
+                    <div className="title-goup">
+                      <div className="title-item bold">{item}</div>
+                      <div className="title-item orange">
+                        {4 + 0.1 * (index % 4)}分
+                      </div>
+                    </div>
+                    <div className="title-item grey">
+                      距离{100 + 100 * (index % 2) + (index % 4) * 10}m
                     </div>
                   </div>
-                  <div className="title-item grey">
-                    距离{100 + 100 * (index % 2) + (index % 4) * 10}m
+                  <div className="label">
+                    <div className="label-item">剧本数量{2 + (index % 2)}</div>
+                    <div className="label-group">
+                      <div className="label-item span">悬疑</div>
+                      <div className="label-item span">推理</div>
+                    </div>
                   </div>
-                </div>
-                <div className="label">
-                  <div className="label-item">剧本数量{2 + (index % 2)}</div>
-                  <div className="label-group">
-                    <div className="label-item span">悬疑</div>
-                    <div className="label-item span">推理</div>
-                  </div>
-                </div>
-                <div className="label">
-                  <div className="label-item red bold">
-                    门票¥{10 + (index % 2) * 10}起
+                  <div className="label">
+                    <div className="label-item red bold">
+                      门票¥{10 + (index % 2) * 10}起
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,0 +1,65 @@
+.map-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../static/images/map.jpg");
+  background-size: cover;
+}
+.map-header {
+  height: 16vw;
+  width: 100vw;
+  font-size: 6vw;
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #7163c8;
+}
+.map-tip {
+  width: 5vw;
+  height: 5vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 5vw;
+  background-color: red;
+}
+.map-first {
+  top: 35vw;
+  left: 63vw;
+}
+.map-second {
+  top: 175vw;
+  left: 54vw;
+}
+.map-to-progress {
+  height: 10vw;
+  width: 40vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 5vw;
+  bottom: 10vw;
+  border-radius: 10vw;
+  font-size: 4vw;
+  background-color: #fff;
+  color: orange;
+}
+
+.icon-forward::before {
+  height: 0.5em;
+  width: 0.5em;
+  border-style: solid;
+  border-width: 2px 0 0 2px;
+  -ms-transform: translate(-50%, -50%) rotate(135deg);
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.icon-forward::after {
+  width: 0.8em;
+  border-top: 2px solid;
+  left: 45%;
+}
