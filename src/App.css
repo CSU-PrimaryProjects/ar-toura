@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Cavolini";
+  src: url("./static/fonts/CAVOLINI.TTF");
+}
+
+@font-face {
+    font-family: "Cavolini Bold";
+    src: url("./static/fonts/CAVOLINIBOLD.TTF");
+  }
+
+.app {
+  width: 100vw;
+}
