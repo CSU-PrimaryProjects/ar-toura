@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import "./index.css";
 function Progress() {
   const [activeProgress, setActiveProgress] = useState(0);

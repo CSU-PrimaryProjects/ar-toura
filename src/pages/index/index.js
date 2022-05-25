@@ -42,8 +42,8 @@ function Index() {
             "烈士公园",
             "岳麓山",
             "橘子洲",
-            "湖南大学",
-            "第一师范",
+            "松雅湖",
+            "洋湖湿地",
             "马王堆",
           ].map((item, index) => (
             <Link className="link" to="/map">
