@@ -49,7 +49,6 @@ function Progress() {
         <div className="progress-text"> </div>
         <div className="progress-title">
           <div className="progress-point"></div>纪念塔
-          <div className="progress-lock">进度100%</div>
         </div>
         <div className="progress-text">
           湖南烈士纪念塔1958年建于今东风路湖南烈士公园内，高58．7米，由2932块白玉石和花岗石砌成，雕栏刻柱，翠绿琉璃瓦塔顶，威武雄伟。整个建筑由纪念碑和奠堂两大部分组成。
@@ -57,7 +56,13 @@ function Progress() {
         <div className="progress-text">
           恭喜你找到了这里，请快去寻找最后几张缺损的笔记本来揭开那段抗战岁月的神秘面纱。
         </div>
-        <div className="progress-text"> </div>
+        <div className="progress-title">
+          <div className="progress-point"></div>尾声
+          <div className="progress-lock">进度100%</div>
+        </div>
+        <div className="progress-text">
+          “砍头不要紧，只要主义真。杀了夏明翰，还有后来人。”笔记本上是夏明翰的就义诗！这是夏明翰的笔记本。夏明翰是湖南衡阳人，曾先后多次组织参加了五四运动、秋收起义等革命活动。最终在汉口转移时，被交通员出卖，挥笔写下这首气壮山河的就义诗后，壮烈牺牲，年仅28岁。让我们向伟大的革命英烈致敬。
+        </div>
       </div>
       <div className="footer">
         <Link to="/index">
